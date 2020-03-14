@@ -28,6 +28,25 @@ if (menuResponsive.classList) {
 
 navButton.onclick = displayNav;
 
+// TEXT CHANGE
+
+// (function() {
+//
+//     var quoteOne = $(".quote_one");
+//     var quoteIndex = -1;
+//
+//     function showNextQuote() {
+//         ++quoteIndex;
+//         quoteOne.eq(quoteIndex % quoteOne.length)
+//             .fadeIn(600)
+//             .delay(600)
+//             .fadeOut(600, showNextQuote);
+//     }
+//
+//     showNextQuote();
+//
+// })();
+
 // Original JavaScript code by Chirp Internet: www.chirp.com.au
   // Please acknowledge use of this code by including this header.
 
@@ -41,6 +60,7 @@ navButton.onclick = displayNav;
     }
 
   }, false);
+
 
 // var myIndex = 0;
 // carousel();
