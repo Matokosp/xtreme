@@ -30,6 +30,58 @@ navButton.onclick = displayNav;
 
 // TEXT CHANGE
 
+// function test() {
+//     let x = document.querySelectorAll('.quote_one');
+//     setTimeout(()=> {
+//         x[0];
+//         x[1].style.opacity = '0';
+//         x[2].style.opacity = '0';
+//         x[3].style.opacity = '0';
+//         setTimeout(() => {
+//             x[1].style.opacity = '1';
+//             setTimeout(() => {
+//                 x[2].style.opacity = '1'
+//                 setTimeout(() => {
+//                     x[3].style.opacity = '1'
+//                     setTimeout(test(), 3000)
+//                 }, 3000)
+//             }, 3000)
+//         }, 3000)
+//     }, 3000)
+//     }
+//     test()
+
+let y = document.querySelectorAll('.quote_one');
+        y[0];
+        y[1].style.opacity = '0';
+        y[2].style.opacity = '0';
+        y[3].style.opacity = '0';
+
+function test(x) {
+        setTimeout(() => {
+            x[1].style.opacity = '1';
+            setTimeout(() => {
+                x[2].style.opacity = '1'
+                setTimeout(() => {
+                    x[3].style.opacity = '1'
+                    setTimeout(()=>
+                        {
+                            x[0];
+                            x[1].style.opacity = '0';
+                            x[2].style.opacity = '0';
+                            x[3].style.opacity = '0';
+                            test(x)
+                        }, 3000)
+                }, 3000)
+            }, 3000)
+        }, 3000)
+    }
+    test(y)
+
+
+
+
+
 // (function() {
 //
 //     var quoteOne = $(".quote_one");
@@ -62,17 +114,29 @@ navButton.onclick = displayNav;
   }, false);
 
 
-// var myIndex = 0;
-// carousel();
-//
-// function carousel() {
-//   var i;
-//   var x = document.getElementsByClassName("storyline_slide");
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";
-//   }
-//   myIndex++;
-//   if (myIndex > x.length) {myIndex = 1}
-//   x[myIndex-1].style.display = "block";
-//   setTimeout(carousel, 2000); // Change image every 2 seconds
-// }
+// COUNTER TABLETAS
+
+var tablets = $('#tablets').offset();
+
+$(window).scroll(function(){
+  if ($(window).scrollTop() >= tablets.top - 320) {
+    $('.count').each(function() {
+    var $this = $(this),
+          countTo = $this.attr('data-count');
+      $({ countNum: $this.text()}).animate({
+        countNum: countTo
+      },
+      {
+        duration: 2000,
+        easing:'swing',
+        step: function() {
+          $this.text(Math.floor(this.countNum));
+        },
+        complete: function() {
+          $this.text(this.countNum);
+          //alert('finished');
+        }
+      });
+  });
+}
+})
