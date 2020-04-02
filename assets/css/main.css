@@ -387,6 +387,7 @@ video {
  .tablets {
    position: relative;
    display: flex;
+   flex-direction: column;
  }
 
  .tablets_bkg {
@@ -421,6 +422,7 @@ video {
  .sharing {
    position: relative;
    display: flex;
+   flex-direction: column;
  }
 
  .share_bkg {
