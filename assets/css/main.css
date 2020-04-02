@@ -423,6 +423,10 @@ video {
    display: flex;
  }
 
+ .share_bkg {
+   width: 100%;
+ }
+
  .sharing_text {
    color: #fff;
    position: absolute;
