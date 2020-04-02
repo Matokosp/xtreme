@@ -88,7 +88,7 @@ video {
   z-index: 50;
   top: 0;
   background-color: #000;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -129,7 +129,7 @@ video {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 94vh;
+  height: calc(var(--vh, 1vh) * 94);
   padding-top: 6vh;
 }
 
@@ -216,6 +216,7 @@ video {
   top: 10px;
   left: 5vw;
   color: #959595;
+  font-size: 1.3rem;
 }
 
 .process_title_outline {
@@ -232,6 +233,7 @@ video {
   bottom: 0;
   right: 5vw;
   color: #959595;
+  font-size: 1.3rem;
 }
 
 .onthego_section {
@@ -266,7 +268,7 @@ video {
 
 .storyline {
   position: relative;
-  height: 80vh;
+  height: calc(var(--vh, 1vh) * 80);
 }
 
 /* square */
@@ -403,8 +405,9 @@ video {
  }
 
  .tablets_text h3 {
-   font-weight: 600;
+   font-weight: 800;
    margin: 0;
+
  }
 
  .tablets_text-big {
