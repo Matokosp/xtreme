@@ -102,5 +102,26 @@
      height: 100vh;
    }
 
+   /* TABLETS SECTION */
+
+   .tablets_text {
+     text-align: left;
+     position: absolute;
+     top: 10%;
+     left: 5vw;
+     right: auto;
+   }
+
+   /* SHARE SECTION */
+
+   .sharing_text {
+     left: 5vw;
+     bottom: 10%;
+   }
+
+   .sharing_text h2 {
+     font-size: 3.8rem;
+   }
+
 
 }

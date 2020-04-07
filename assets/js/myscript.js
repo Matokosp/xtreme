@@ -42,28 +42,7 @@ if (menuResponsive.classList) {
 
 navButton.onclick = displayNav;
 
-// TEXT CHANGE
 
-// function test() {
-//     let x = document.querySelectorAll('.quote_one');
-//     setTimeout(()=> {
-//         x[0];
-//         x[1].style.opacity = '0';
-//         x[2].style.opacity = '0';
-//         x[3].style.opacity = '0';
-//         setTimeout(() => {
-//             x[1].style.opacity = '1';
-//             setTimeout(() => {
-//                 x[2].style.opacity = '1'
-//                 setTimeout(() => {
-//                     x[3].style.opacity = '1'
-//                     setTimeout(test(), 3000)
-//                 }, 3000)
-//             }, 3000)
-//         }, 3000)
-//     }, 3000)
-//     }
-//     test()
 
 let y = document.querySelectorAll('.quote_one');
         y[0];
@@ -93,28 +72,6 @@ function test(x) {
     test(y)
 
 
-
-
-
-// (function() {
-//
-//     var quoteOne = $(".quote_one");
-//     var quoteIndex = -1;
-//
-//     function showNextQuote() {
-//         ++quoteIndex;
-//         quoteOne.eq(quoteIndex % quoteOne.length)
-//             .fadeIn(600)
-//             .delay(600)
-//             .fadeOut(600, showNextQuote);
-//     }
-//
-//     showNextQuote();
-//
-// })();
-
-// Original JavaScript code by Chirp Internet: www.chirp.com.au
-  // Please acknowledge use of this code by including this header.
 
   window.addEventListener("DOMContentLoaded", function(e) {
 
