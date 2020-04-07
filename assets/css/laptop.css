@@ -2,6 +2,14 @@
 
 @media screen and (min-width: 1100px) {
 
+  .tablet {
+    display: none;
+  }
+
+  .laptop {
+    display: inline-block;
+  }
+
   .product_header {
     display: flex;
     flex-direction: row;
@@ -20,13 +28,47 @@
     background-image: url('../images/hydration_bkg-laptop.jpg');
   }
 
-  .tablet {
-    display: none;
+  .product_title {
+    right: 5vw;
+    bottom: 45px;
   }
 
-  .laptop {
-    display: inline-block;
+  .product_logo {
+    height: 60px;
+    position: absolute;
+    top: -70px;
   }
+
+  .product_logo_hydration {
+    left: -40px;
+  }
+
+  .product_logo_energy {
+    left: -5px;
+  }
+
+  .product_logo_color {
+    display: block;
+  }
+
+  .product_logo_white {
+    display: block;
+    z-index: 3;
+    transition: 0.4s;
+  }
+
+  .product_title p {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 1rem;
+  }
+
+  .product_title:hover .product_logo_white {
+    opacity: 0;
+  }
+
+
+  /* PROCESSS SECTION */
 
   .process_bkg {
     width: 700px;
@@ -45,6 +87,8 @@
     margin: 0;
   }
 
+  /* ON THE GO SECTION */
+
   .onthego_bkg {
     width: 100%;
     z-index: 1;
@@ -55,15 +99,16 @@
     width: auto;
     right: 25vw;
     display: inline-block;
-    bottom: 45%;
+    bottom: 47%;
     z-index: 5;
+    font-size: 5rem;
   }
 
   /* storyline */
 
   .storyline {
     position: relative;
-    height: calc(var(--vh, 1vh) * 90);
+    height: calc(var(--vh, 1vh) * 100);
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -74,7 +119,7 @@
   .storyline_square {
     position: relative;
     width: 50%;
-    height: calc(var(--vh, 1vh) * 90);
+    height: calc(var(--vh, 1vh) * 100);
     z-index: 41;
   }
 
@@ -82,7 +127,7 @@
 
   .storyline_text {
     width: 50%;
-    height: calc(var(--vh, 1vh) * 90);
+    height: calc(var(--vh, 1vh) * 100);
     position: absolute;
     background: #000;
   }
@@ -99,7 +144,7 @@
    #stage .stage_div {
      width: 100%;
      position: absolute;
-     height: calc(var(--vh, 1vh) * 90);
+     height: calc(var(--vh, 1vh) * 100);
    }
 
    /* TABLETS SECTION */
@@ -120,13 +165,16 @@
 
    /* SHARE SECTION */
 
+   .sharing {
+   }
+
    .sharing_text {
      left: 5vw;
      bottom: 10%;
    }
 
    .sharing_text h2 {
-     font-size: 3.8rem;
+     font-size: 5rem;
    }
 
 
