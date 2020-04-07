@@ -10,6 +10,34 @@
     display: inline-block;
   }
 
+  /* MENU */
+
+  .hamburger_div {
+    display: none;
+  }
+
+  .menu {
+    height: calc(var(--vh, 1vh) * 20);
+    transform: translateX(0);
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 15vw;
+    width: 70vw;
+    transition: 0.4s;
+  }
+
+  .menu a {
+    text-align: center;
+    width: 25%;
+    font-size: 0.8rem;
+  }
+
+  .menu_scroll {
+    height: calc(var(--vh, 1vh) * 5);
+  }
+
+  /* MAIN */
+
   .product_header {
     display: flex;
     flex-direction: row;

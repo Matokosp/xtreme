@@ -37,6 +37,17 @@ video {
 
 /* hamburger menu icon */
 
+.menu_responsive-hide {
+	transition: 0.5s;
+	opacity: 0;
+  	transform: translateY(-60px);
+}
+
+.menu_responsive-show {
+	transition: 0.5s;
+  	top: 0px;
+}
+
 .hamburger_div {
   z-index: 99;
   background-color: #000;
