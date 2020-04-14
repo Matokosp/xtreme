@@ -33,9 +33,9 @@
   }
 
   .laptop_menu_logo_div--scroll {
-    width: 100px;
+    width: 80px;
     left: 20px;
-    top: 5px;
+    top: -50px;
   }
 
   .laptop_menu_logo-color--scroll {
@@ -48,10 +48,10 @@
   }
 
   .menu {
-    height: 150px;
     transform: translateX(0);
     flex-direction: row;
     justify-content: space-around;
+    height: 150px;
     padding: 0 30vw;
     width: 40vw;
     transition: 0.4s;
@@ -63,10 +63,14 @@
     font-size: 0.8rem;
   }
 
-  .menu_scroll {
+  .menu_small {
     padding: 0 15vw;
     width: 70vw;
     height: 60px;
+  }
+
+  .menu_scroll-hide {
+    transform: translateY(-60px);
   }
 
   /* MAIN */
@@ -177,7 +181,7 @@
 
   .storyline {
     position: relative;
-    height: calc(var(--vh, 1vh) * 100);
+    height: calc(var(--vh, 1vh) * 90);
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -188,7 +192,7 @@
   .storyline_square {
     position: relative;
     width: 50%;
-    height: calc(var(--vh, 1vh) * 100);
+    height: calc(var(--vh, 1vh) * 90);
     z-index: 41;
   }
 
@@ -196,7 +200,7 @@
 
   .storyline_text {
     width: 50%;
-    height: calc(var(--vh, 1vh) * 100);
+    height: calc(var(--vh, 1vh) * 90);
     position: absolute;
     background: #000;
   }
@@ -213,7 +217,7 @@
    #stage .stage_div {
      width: 100%;
      position: absolute;
-     height: calc(var(--vh, 1vh) * 100);
+     height: calc(var(--vh, 1vh) * 90);
    }
 
    /* TABLETS SECTION */
