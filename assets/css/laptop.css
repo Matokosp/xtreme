@@ -12,17 +12,48 @@
 
   /* MENU */
 
+  .laptop_menu_logo_div {
+    position: fixed;
+    width: 160px;
+    z-index: 99;
+    left: 20vw;
+    top: 30px;
+    transition: 0.4s;
+  }
+
+  .laptop_menu_logo {
+    width: 100%;
+    position: absolute;
+  }
+
+  .laptop_menu_logo-color {
+    opacity: 1;
+    width: 100%;
+    transition: 0.4s;
+  }
+
+  .laptop_menu_logo_div--scroll {
+    width: 100px;
+    left: 20px;
+    top: 5px;
+  }
+
+  .laptop_menu_logo-color--scroll {
+    opacity: 0;
+  }
+
+
   .hamburger_div {
     display: none;
   }
 
   .menu {
-    height: calc(var(--vh, 1vh) * 20);
+    height: 150px;
     transform: translateX(0);
     flex-direction: row;
     justify-content: space-around;
-    padding: 0 15vw;
-    width: 70vw;
+    padding: 0 30vw;
+    width: 40vw;
     transition: 0.4s;
   }
 
@@ -33,7 +64,9 @@
   }
 
   .menu_scroll {
-    height: calc(var(--vh, 1vh) * 5);
+    padding: 0 15vw;
+    width: 70vw;
+    height: 60px;
   }
 
   /* MAIN */
@@ -98,8 +131,16 @@
 
   /* PROCESSS SECTION */
 
+  video {
+    display: block;
+  }
+
+  .process_section {
+    background-color: #F7F9FB;
+  }
+
   .process_bkg {
-    width: 700px;
+    width: 600px;
     margin: 0 auto;
     z-index: 1;
     padding-bottom: 4 0px;

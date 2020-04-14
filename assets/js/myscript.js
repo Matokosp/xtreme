@@ -96,9 +96,13 @@ navButton.onclick = displayNav;
 			    var scroll = $(window).scrollTop();
 			    if( scroll > position ) {
 			        $('.menu').addClass('menu_scroll');
+              $('.laptop_menu_logo_div').addClass('laptop_menu_logo_div--scroll');
+              $('.laptop_menu_logo-color').addClass('laptop_menu_logo-color--scroll');
 			    }
 			    if( scroll < position ) {
 			    	$('.menu').removeClass('menu_scroll');
+            $('.laptop_menu_logo_div').removeClass('laptop_menu_logo_div--scroll');
+            $('.laptop_menu_logo-color').removeClass('laptop_menu_logo-color--scroll');
 			    }
 			    // else {
 			    //      console.log('scrollUp');
@@ -106,20 +110,20 @@ navButton.onclick = displayNav;
 			    position = scroll;
 			});
 
-			$(window).scroll(function(){
-				if ( $(window).scrollTop() >= sectionTwo.top * 1 / 2) {
-			    	$('.main_menu').addClass('main_menu-white');
-			    	$('.main_menu-link').css('color', '#000');
-			    	$('.corner_logo').children('img:nth-child(1)').css('display', 'inline');
-			    	$('.corner_logo').children('img:nth-child(2)').css('display', 'none');
-			    } else {
-			    	$('.main_menu').removeClass('main_menu-white');
-			    	$('.main_menu-link').css('color', '#fff');
-			    	$('.main_menu').removeClass('main_menu-hide');
-			    	$('.corner_logo').children('img:nth-child(1)').css('display', 'none');
-			    	$('.corner_logo').children('img:nth-child(2)').css('display', 'inline');
-			    }
-			})
+			// $(window).scroll(function(){
+			// 	if ( $(window).scrollTop() >= sectionTwo.top * 1 / 2) {
+			//     	$('.main_menu').addClass('main_menu-white');
+			//     	$('.main_menu-link').css('color', '#000');
+			//     	$('.corner_logo').children('img:nth-child(1)').css('display', 'inline');
+			//     	$('.corner_logo').children('img:nth-child(2)').css('display', 'none');
+			//     } else {
+			//     	$('.main_menu').removeClass('main_menu-white');
+			//     	$('.main_menu-link').css('color', '#fff');
+			//     	$('.main_menu').removeClass('main_menu-hide');
+			//     	$('.corner_logo').children('img:nth-child(1)').css('display', 'none');
+			//     	$('.corner_logo').children('img:nth-child(2)').css('display', 'inline');
+			//     }
+			// })
 	  }
 	}
 
@@ -127,7 +131,18 @@ navButton.onclick = displayNav;
 	x.addListener(myFunction) // Attach listener function on state changes
 
 
+// VIDEO
 
+
+$(window).scroll(function() {
+    $('#bubbles').each(function() {
+        if ($(this).visible(true)) {
+            $(this)[0].play();
+        } else {
+            $(this)[0].pause();
+        }
+    })
+});
 
 
 // LOOP TEXT
