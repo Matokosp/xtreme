@@ -106,11 +106,20 @@ navButton.onclick = displayNav;
             // $('.laptop_menu_logo_div').removeClass('laptop_menu_logo_div--scroll');
             // $('.laptop_menu_logo-color').removeClass('laptop_menu_logo-color--scroll');
 			    }
-			    // else {
-			    //      console.log('scrollUp');
-			    // }
 			    position = scroll;
 			});
+
+      $( document ).ready(function() {
+        if ($(window).scrollTop() >= sectionTwo.top * 1 / 2) {
+          $('.laptop_menu_logo_div').addClass('laptop_menu_logo_div--scroll');
+          $('.laptop_menu_logo-color').addClass('laptop_menu_logo-color--scroll');
+          $('.menu').css({
+          'padding': '0 15vw',
+          'width': '70vw',
+          'height': '60px'
+        });
+        }
+      });
 
 			$(window).scroll(function(){
 				if ( $(window).scrollTop() >= sectionTwo.top * 1 / 2) {
