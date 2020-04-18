@@ -238,12 +238,31 @@
 
    /* SHARE SECTION */
 
-   .sharing {
-   }
+   /* SLIDER share */
+
+   #stageShare {
+      height: 85vh;
+    }
+
+    #stageShare .stage_div {
+      height: 85vh;
+    }
+
+    .share_1 {
+      background-image: url('../images/share-bkg-desktop.jpg');
+    }
+
+    .share_2 {
+      background-image: url('../images/share-bkg-desktop-2.jpg');
+    }
+
+    .share_3 {
+      background-image: url('../images/share-bkg-desktop-3.jpg');
+    }
 
    .sharing_text {
      left: 5vw;
-     bottom: 10%;
+     bottom: 15%;
    }
 
    .sharing_text h2 {

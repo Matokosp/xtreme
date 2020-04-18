@@ -452,7 +452,7 @@ video {
  }
 
 
- /* SLIDER storyline */
+ /* SLIDER share */
 
  #stageShare {
     margin: 0 auto;
@@ -495,11 +495,6 @@ video {
   .share_3 {
     background-image: url('../images/share-bkg-3.jpg');
   }
-
-
- .share_bkg {
-   width: 100%;
- }
 
  .sharing_text {
    color: #fff;
