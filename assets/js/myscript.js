@@ -67,7 +67,7 @@ navButton.onclick = displayNav;
 	    }
 
 	    if( scroll < position ) {
-	    	$('.hamburger_div').removeClass('menu_responsive-hide')
+	    	$('.hamburger_div').removeClass('menu_responsive-hide');
 	    	$('.hamburger_div').addClass('menu_responsive-show');
 	        console.log('scrollUp');
 	    }
@@ -83,6 +83,25 @@ navButton.onclick = displayNav;
 	    // }
 	    position = scroll;
 	});
+
+  $(window).scroll(function(){
+    if ( $(window).scrollTop() >= sectionTwo.top * 1 / 2) {
+      // ABAJO
+        // $('.hamburger_div').addClass('menu_responsive-show');
+      
+      } else {
+        // ARRIBA
+        $('.hamburger_div').removeClass('menu_responsive-hide');
+      }
+  })
+
+
+
+
+  // DESKTOPS
+
+  // ---------------------------------
+
 
 	var x = window.matchMedia("(min-width: 1200px)")
 
