@@ -88,7 +88,7 @@ navButton.onclick = displayNav;
     if ( $(window).scrollTop() >= sectionTwo.top * 1 / 2) {
       // ABAJO
         // $('.hamburger_div').addClass('menu_responsive-show');
-      
+
       } else {
         // ARRIBA
         $('.hamburger_div').removeClass('menu_responsive-hide');
@@ -220,6 +220,13 @@ function test(x) {
     var arr = stage.getElementsByClassName("stage_div");
     for(var i=0; i < arr.length; i++) {
       arr[i].addEventListener("animationend", fadeComplete, false);
+    }
+
+    var stageTwo = document.getElementById("stageShare");
+    var fadeComplete = function(e) { stageTwo.appendChild(sArr[0]); };
+    var sArr = stageTwo.getElementsByClassName("stage_div");
+    for(var i=0; i < sArr.length; i++) {
+      sArr[i].addEventListener("animationend", fadeComplete, false);
     }
 
   }, false);
