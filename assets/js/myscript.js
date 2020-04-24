@@ -12,6 +12,14 @@ window.addEventListener('resize', () => {
 });
 
 
+
+// VIDEO PRODUCT
+
+var video = document.getElementById("energyVideo");
+video.autoplay = true;
+video.load();
+
+
 // MENU
 
 

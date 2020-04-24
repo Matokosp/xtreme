@@ -81,12 +81,14 @@
   }
 
   .product {
+    display: flex;
     width: 50%;
     height: 100%;
   }
 
   .energy_section {
-    background-image: url('../images/energy_bkg-laptop.jpg');
+    /* background-image: url('../images/energy_bkg-laptop.jpg'); */
+    background: none;
   }
 
   .hydration_section {
@@ -122,15 +124,40 @@
     transition: 0.4s;
   }
 
+  .video_hover {
+    position: absolute;
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    background-color: #000;
+    opacity: 0;
+    transition: 0.4s;
+  }
+
   .product_title p {
     display: inline-block;
     padding: 5px 15px;
     font-size: 1rem;
+    color: #fff;
+    border: 2px solid white;
+  }
+
+  .product_title:hover p {
+    background-color: #fff;
+    color: #000;
   }
 
   .product_title:hover .product_logo_white {
     opacity: 0;
   }
+
+  .product:hover .video_hover {
+    opacity: 0.4;
+  }
+
+  .video_hover:hover {
+    opacity: 0.4;
+  }
+
 
 
   /* PROCESSS SECTION */
