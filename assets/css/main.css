@@ -339,6 +339,10 @@ video {
   transition: 0.4s;
 }
 
+.HABER {
+	transition: 0.4s;
+}
+
 .quote_one-outline {
   -webkit-text-stroke: 1px white;
   -webkit-text-fill-color: rgba(0,0,0,0.1);
@@ -577,3 +581,6 @@ video {
   }
 
 }
+
+
+/* PRODUCT PAGES */

@@ -19,6 +19,10 @@ var video = document.getElementById("energyVideo");
 video.autoplay = true;
 video.load();
 
+var video = document.getElementById("hydrationVideo");
+video.autoplay = true;
+video.load();
+
 
 // MENU
 
@@ -196,28 +200,39 @@ let y = document.querySelectorAll('.quote_one');
         y[0];
         y[1].style.opacity = '0';
         y[2].style.opacity = '0';
-        y[3].style.opacity = '0';
 
 function test(x) {
+    let aux = document.querySelectorAll('.HABER');
+    let testo = aux[0];
+    let momento = "momento";
+    let lugar = "lugar";
+
+
         setTimeout(() => {
             x[1].style.opacity = '1';
             setTimeout(() => {
-                x[2].style.opacity = '1'
+            		testo.innerHTML = lugar;
+                x[2].style.opacity = '1';
                 setTimeout(() => {
-                    x[3].style.opacity = '1'
-                    setTimeout(()=>
+                			testo.style.opacity = '0';
+
+                      setTimeout(()=>
+                      {
+                      		testo.innerHTML =momento;
+                          testo.style.opacity = '1';
+                             setTimeout(()=>
                         {
                             x[0];
                             x[1].style.opacity = '0';
                             x[2].style.opacity = '0';
-                            x[3].style.opacity = '0';
                             test(x)
-                        }, 3000)
+                        }, 2500)
+                      }, 500)
                 }, 3000)
             }, 3000)
         }, 3000)
     }
-    test(y)
+    test(y);
 
 
 
