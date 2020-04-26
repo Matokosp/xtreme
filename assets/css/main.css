@@ -539,6 +539,48 @@ video {
  }
 
 
+ /* PRODUCT PAGES */
+
+ .single_product_header {
+   position: relative;
+   height: calc(var(--vh, 1vh) * 94);
+   padding-top: calc(var(--vh, 1vh) * 6);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background position: center center;
+ }
+
+ .hydration-single-header {
+   background-image: url('../images/energy-single-hero.jpg');
+ }
+
+ .single_product_header h2 {
+   color: #fff;
+   font-size: 3.4rem;
+   font-weight: 900;
+ }
+
+ .product-gradient {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   
+ }
+
+
+
+ .product_overview {
+   height: calc(var(--vh, 1vh) * 100);
+ }
+
+
+
 
 /* media query for tablets */
 
