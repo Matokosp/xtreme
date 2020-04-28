@@ -94,3 +94,74 @@ navButton.onclick = displayNav;
         $('.hamburger_div').removeClass('menu_responsive-hide');
       }
   })
+
+
+
+  // DESKTOPS
+
+  // ---------------------------------
+
+
+	var x = window.matchMedia("(min-width: 1200px)")
+
+	function myFunction(x) {
+	  if (x.matches) { // If media query matches
+
+	  		var windowHeight = $( window ).height();
+	  		var position = $(window).scrollTop();
+	  		// SCROLL UP & DOWN
+		    $(window).scroll(function() {
+			    var scroll = $(window).scrollTop();
+			    if( scroll > position ) {
+            // HACIA ABAJO
+			        $('.menu').addClass('menu_scroll-hide');
+              $('.laptop_menu_logo_div').addClass('laptop_menu_logo_div--scroll');
+              $('.laptop_menu_logo-color').addClass('laptop_menu_logo-color--scroll');
+			    }
+			    if( scroll < position ) {
+            // HACIA ARRIBA
+			    	$('.menu').removeClass('menu_scroll-hide');
+            // $('.laptop_menu_logo_div').removeClass('laptop_menu_logo_div--scroll');
+            // $('.laptop_menu_logo-color').removeClass('laptop_menu_logo-color--scroll');
+			    }
+			    position = scroll;
+			});
+
+      $( document ).ready(function() {
+        if ($(window).scrollTop() >= sectionTwo.top * 1 / 2) {
+          $('.laptop_menu_logo_div').addClass('laptop_menu_logo_div--scroll');
+          $('.laptop_menu_logo-color').addClass('laptop_menu_logo-color--scroll');
+          $('.menu').css({
+          'padding': '0 15vw',
+          'width': '70vw',
+          'height': '60px'
+        });
+        }
+      });
+
+			$(window).scroll(function(){
+				if ( $(window).scrollTop() >= sectionTwo.top * 1 / 2) {
+          // ABAJO
+			    	$('.menu').css({
+            'padding': '0 15vw',
+            'width': '70vw',
+            'height': '60px'
+          });
+			    } else {
+            // ARRIBA
+			    	$('.menu').css({
+            'padding': '0 30vw',
+            'width': '40vw',
+            'height': '150px'
+          });
+            $('.menu').removeClass('menu_scroll-hide');
+            $('.laptop_menu_logo_div').removeClass('laptop_menu_logo_div--scroll');
+            $('.laptop_menu_logo-color').removeClass('laptop_menu_logo-color--scroll');
+			    }
+			})
+
+	  }
+	}
+
+	myFunction(x) // Call listener function at run time
+	x.addListener(myFunction) // Attach listener function on state changes

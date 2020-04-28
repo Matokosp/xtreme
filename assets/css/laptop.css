@@ -107,7 +107,7 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
-  
+
 
   .hydration_section {
     background-image: url('../images/hydration_bkg-laptop.jpg');
@@ -314,5 +314,70 @@
      font-size: 4.2rem;
    }
 
+
+   /* ------------------------------------------------------------- */
+
+
+   /* SINGLE PRODUCT PAGE */
+
+
+   .hydration-single-header {
+     background-image: url('../images/energy-single-hero-laptop.jpg');
+   }
+
+   .single_product_header h2 {
+     color: #fff;
+     font-size: 4rem;
+     font-weight: 900;
+   }
+
+   .xb-logo {
+     position: absolute;
+     bottom: 30px;
+     right: 60px;
+     width: 200px;
+   }
+
+   .product_overview {
+     text-align: right;
+   }
+
+   .overview_text {
+     align-items: flex-end;
+     justify-content: center;
+     height: calc(var(--vh, 1vh) * 100);
+     width: 100%;
+     right: 100px;
+   }
+
+   .overview_text h3 {
+     color: #fff;
+     font-size: 2.8rem;
+   }
+
+   .energy_overview {
+     background-image: url('../images/single-overview-energy-laptop.jpg');
+   }
+
+   .overview_responsive_background_opacity {
+     display: none;
+   }
+
+   .facts {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+   }
+
+   .facts_table_section {
+     width: 45%;
+     padding: 0 0 0 5%;
+   }
+
+   .facts_gallery {
+     display: block;
+     width: 45%;
+     padding: 0 5% 0 0;
+   }
 
 }
