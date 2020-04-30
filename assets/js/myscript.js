@@ -66,6 +66,7 @@ navButton.onclick = displayNav;
 // }
 	var sectionOne = $('#sectionOne').offset();
 	var sectionTwo = $('#sectionTwo').offset();
+  var sectionThree = $('#sectionThree').offset();
 	var position = $(window).scrollTop();
 
 	// should start at 0
@@ -172,6 +173,14 @@ navButton.onclick = displayNav;
             $('.laptop_menu_logo-color').removeClass('laptop_menu_logo-color--scroll');
 			    }
 			})
+
+      $(window).scroll(function() {
+        if ($(window).scrollTop() >= sectionThree.top - 150) {
+          $('.go_white').addClass('onthego_title_white');
+        } else {
+          $('.go_white').removeClass('onthego_title_white');
+        }
+      });
 
 	  }
 	}

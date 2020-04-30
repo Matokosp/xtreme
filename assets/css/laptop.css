@@ -217,12 +217,26 @@
   }
 
   .onthego_title {
+    color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
     width: auto;
     right: 25vw;
     display: inline-block;
     bottom: 47%;
     z-index: 5;
     font-size: 5rem;
+  }
+
+  .go_white {
+    transition: color 0.5s;
+  }
+
+  .onthego_title_white {
+    /* -webkit-text-fill-color: #fff; /* Will override color (regardless of order) */
+    color: #fff;
+    /* -webkit-text-stroke-width: 1.1px;
+    -webkit-text-stroke-color: #fff; */
   }
 
   /* storyline */
