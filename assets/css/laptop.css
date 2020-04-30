@@ -92,6 +92,10 @@
     background: none;
   }
 
+  .hydration_section {
+    background: none;
+  }
+
   .product_video {
     /* Make video to at least 100% wide and tall */
   min-width: 100%;
@@ -108,10 +112,9 @@
   transform: translate(-50%,-50%);
 }
 
-
-  .hydration_section {
-    background-image: url('../images/hydration_bkg-laptop.jpg');
-  }
+/* #hydrationVideo {
+  margin-top: 150px;
+} */
 
   .product_title {
     right: 5vw;
@@ -320,12 +323,16 @@
 
    /* SINGLE PRODUCT PAGE */
 
-
-   .hydration-single-header {
+   .energy-single-header {
      background-image: url('../images/energy-single-hero-laptop.jpg');
    }
 
+   .hydration-single-header {
+     background-image: url('../images/hydration-single-hero-laptop.jpg');
+   }
+
    .single_product_header h2 {
+     margin-top: 40vh;
      color: #fff;
      font-size: 4rem;
      font-weight: 900;
@@ -338,17 +345,30 @@
      width: 200px;
    }
 
-   .product_overview {
-     text-align: right;
+   .gradient-hydration {
+     background-image: linear-gradient(rgba(0,0,0,0), #0BB3E9);
+     /* background-image: linear-gradient(rgba(0,0,0,0), #065974); */
    }
 
-   .overview_text {
-     align-items: flex-end;
+   .product_overview {
+     /* text-align: auto; */
+   }
+
+   .energy_overview .overview_text {
      justify-content: center;
+     align-items: flex-end;
      height: calc(var(--vh, 1vh) * 100);
      width: 100%;
      right: 100px;
    }
+
+   .hydration_overview .overview_text {
+     justify-content: center;
+     align-items: flex-start;
+     height: calc(var(--vh, 1vh) * 100);
+     width: 70%;
+   }
+
 
    .overview_text h3 {
      color: #fff;
@@ -357,6 +377,14 @@
 
    .energy_overview {
      background-image: url('../images/single-overview-energy-laptop.jpg');
+     text-align: right;
+
+   }
+
+   .hydration_overview {
+     background-image: url('../images/single-overview-hydration-laptop.jpg');
+     text-align: left;
+
    }
 
    .overview_responsive_background_opacity {
