@@ -671,6 +671,7 @@ video {
  }
 
  .facts_table_upp {
+   font-size: 1rem;
    text-transform: uppercase;
    letter-spacing: 2px;
    font-weight: 400;
@@ -693,11 +694,15 @@ video {
  .facts_table_left {
    width: 80%;
    font-weight: 800;
-   font-size: 1.4rem;
+   font-size: 1rem;
+ }
+
+ .vitamin_number {
+   font-size: 1rem;
  }
 
  .facts_table_right {
-   font-size: 1.1rem;
+   font-size: 0.8rem;
    font-weight: 600;
  }
 
@@ -768,11 +773,11 @@ video {
   }
 
   .facts_table_left {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .facts_table_right {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
 }

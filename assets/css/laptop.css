@@ -416,10 +416,52 @@
      padding: 0 0 0 5%;
    }
 
+   .facts_table_left {
+     font-size: 1.2rem;
+   }
+
+   .facts_table_right {
+     font-size: 1rem;
+   }
+
    .facts_gallery {
      display: block;
-     width: 45%;
-     padding: 0 5% 0 0;
+     width: 50%;
+     padding: 0;
+   }
+
+   /* PRODUCT GALLERY */
+
+   .facts_gallery #stage {
+     width: 100%;
+   }
+
+   .facts_gallery #stage .stage_div {
+     height: calc(var(--vh, 1vh) * 85);
+   }
+
+   .energy_product_gallery_1 {
+     background-image: url('../images/share-bkg-desktop.jpg');
+   }
+
+   .energy_product_gallery_2 {
+     background-image: url('../images/share-bkg-desktop-2.jpg');
+   }
+
+   .energy_product_gallery_3 {
+     background-image: url('../images/share-bkg-desktop-3.jpg');
+   }
+
+   .hydration_product_gallery_1 {
+     background-image: url('../images/share-bkg-desktop.jpg');
+   }
+
+   .hydration_product_gallery_2 {
+     background-image: url('../images/share-bkg-desktop-2.jpg');
+   }
+
+   .hydration_product_gallery_3 {
+     background-image: url('../images/share-bkg-desktop-3.jpg');
    }
 
 }

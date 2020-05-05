@@ -165,3 +165,16 @@ navButton.onclick = displayNav;
 
 	myFunction(x) // Call listener function at run time
 	x.addListener(myFunction) // Attach listener function on state changes
+
+
+
+  window.addEventListener("DOMContentLoaded", function(e) {
+
+    var stage = document.getElementById("stage");
+    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+    var arr = stage.getElementsByClassName("stage_div");
+    for(var i=0; i < arr.length; i++) {
+      arr[i].addEventListener("animationend", fadeComplete, false);
+    }
+
+  }, false);
