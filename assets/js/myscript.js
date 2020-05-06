@@ -13,6 +13,18 @@ window.addEventListener('resize', () => {
 
 
 
+
+// PRELOAD BY TIME
+
+
+setTimeout(function(){
+    $('#loadScreen').fadeOut();
+    $('#loadScreen').delay(150).fadeOut('slow');
+}, 1500);
+
+
+
+
 // VIDEO PRODUCT
 
 var video = document.getElementById("energyVideo");

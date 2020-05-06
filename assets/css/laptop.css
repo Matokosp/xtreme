@@ -441,27 +441,27 @@
    }
 
    .energy_product_gallery_1 {
-     background-image: url('../images/share-bkg-desktop.jpg');
+     background-image: url('../images/energy-table-2.jpg');
    }
 
    .energy_product_gallery_2 {
-     background-image: url('../images/share-bkg-desktop-2.jpg');
+     background-image: url('../images/energy-table-1.jpg');
    }
 
    .energy_product_gallery_3 {
-     background-image: url('../images/share-bkg-desktop-3.jpg');
+     background-image: url('../images/energy-table-3.jpg');
    }
 
    .hydration_product_gallery_1 {
-     background-image: url('../images/share-bkg-desktop.jpg');
+     background-image: url('../images/hydration-table-1.jpg');
    }
 
    .hydration_product_gallery_2 {
-     background-image: url('../images/share-bkg-desktop-2.jpg');
+     background-image: url('../images/hydration-table-2.jpg');
    }
 
    .hydration_product_gallery_3 {
-     background-image: url('../images/share-bkg-desktop-3.jpg');
+     background-image: url('../images/hydration-table-3.jpg');
    }
 
 }
