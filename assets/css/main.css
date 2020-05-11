@@ -644,7 +644,7 @@ video {
 
  .overview_text h3 {
    color: #fff;
-   font-size: 2rem;
+   font-size: 1.5rem;
  }
 
  .outline-overview {
@@ -779,6 +779,10 @@ video {
 
   .hydration_overview {
     background-image: url('../images/single-overview-hydration-tablet.jpg');
+  }
+
+  .overview_text h3 {
+    font-size: 2rem;
   }
 
   .facts_table_upp {

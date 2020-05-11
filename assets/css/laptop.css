@@ -364,29 +364,31 @@
      /* background-image: linear-gradient(rgba(0,0,0,0), #065974); */
    }
 
-   .product_overview {
-     /* text-align: auto; */
+   .energy_overview {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
    }
 
    .energy_overview .overview_text {
      justify-content: center;
      align-items: flex-end;
      height: calc(var(--vh, 1vh) * 100);
-     width: 100%;
-     right: 100px;
+     width: 55%;
+     right: 50px;
    }
 
    .hydration_overview .overview_text {
      justify-content: center;
      align-items: flex-start;
      height: calc(var(--vh, 1vh) * 100);
-     width: 70%;
+     width: 60%;
    }
-
 
    .overview_text h3 {
      color: #fff;
-     font-size: 2.8rem;
+     font-size: 2rem;
    }
 
    .energy_overview {
@@ -403,6 +405,13 @@
 
    .overview_responsive_background_opacity {
      display: none;
+   }
+
+   .energy_overview .overview_responsive_background_opacity {
+     position: relative;
+     display: block;
+     width: 45%;
+     opacity: 0;
    }
 
    .facts {
@@ -463,5 +472,26 @@
    .hydration_product_gallery_3 {
      background-image: url('../images/hydration-table-3.jpg');
    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+  .energy_overview .overview_text {
+    width: 55%;
+  }
+
+  .energy_overview .overview_responsive_background_opacity {
+    width: 45%;
+  }
+
+  .hydration_overview .overview_text {
+    width: 55%;
+  }
+
+  .overview_text h3 {
+    color: #fff;
+    font-size: 2.5rem;
+  }
 
 }
