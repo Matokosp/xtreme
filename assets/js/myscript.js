@@ -11,9 +11,6 @@ window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
-
-
-
 // PRELOAD BY TIME
 
 
@@ -23,17 +20,6 @@ setTimeout(function(){
 }, 1500);
 
 
-
-
-// VIDEO PRODUCT
-
-var video = document.getElementById("energyVideo");
-video.autoplay = true;
-video.load();
-
-var video = document.getElementById("hydrationVideo");
-video.autoplay = true;
-video.load();
 
 
 // MENU
@@ -199,6 +185,20 @@ navButton.onclick = displayNav;
 
 	myFunction(x) // Call listener function at run time
 	x.addListener(myFunction) // Attach listener function on state changes
+
+
+
+// VIDEO PRODUCT
+
+var video = document.getElementById("energyVideo");
+video.autoplay = true;
+video.load();
+
+var video = document.getElementById("hydrationVideo");
+video.autoplay = true;
+video.load();
+
+
 
 
 // VIDEO

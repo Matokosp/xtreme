@@ -473,6 +473,28 @@
      background-image: url('../images/hydration-table-3.jpg');
    }
 
+   /* CONTACT PAGE */
+
+   .contact_main {
+     padding: 35vh 8vw 5vh 8vw;
+     flex-direction: row;
+   }
+
+   .contact_info {
+     text-align: center;
+     margin-bottom: 0px;
+     width: 30%;
+   }
+
+   .contact_form {
+     width: 55%;
+     padding-left: 15%;
+   }
+
+   .contact_info_list li a {
+     font-size: 0.8rem;
+   }
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -492,6 +514,12 @@
   .overview_text h3 {
     color: #fff;
     font-size: 2.5rem;
+  }
+
+  /* CONTACT PAGE */
+
+  .contact_main {
+    padding: 30vh 8vw 20vh 8vw;
   }
 
 }
