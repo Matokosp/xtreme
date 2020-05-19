@@ -88,12 +88,13 @@
   }
 
   .energy_section {
-    /* background-image: url('../images/energy_bkg-laptop.jpg'); */
-    background: none;
+    background-image: none;
+    /* background: #000; */
   }
 
   .hydration_section {
-    background: none;
+    background-image: none;
+    /* background: #000; */
   }
 
   .product_video {
@@ -310,7 +311,7 @@
       height: 85vh;
     }
 
-    .share_1 {
+    /* .share_1 {
       background-image: url('../images/share-bkg-desktop.jpg');
     }
 
@@ -320,7 +321,7 @@
 
     .share_3 {
       background-image: url('../images/share-bkg-desktop-3.jpg');
-    }
+    } */
 
    .sharing_text {
      left: 5vw;
@@ -336,14 +337,14 @@
 
 
    /* SINGLE PRODUCT PAGE */
-
+/*
    .energy-single-header {
      background-image: url('../images/energy-single-hero-laptop.jpg');
    }
 
    .hydration-single-header {
      background-image: url('../images/hydration-single-hero-laptop.jpg');
-   }
+   } */
 
    .single_product_header h2 {
      margin-top: 40vh;
@@ -391,7 +392,7 @@
      font-size: 2rem;
    }
 
-   .energy_overview {
+   /* .energy_overview {
      background-image: url('../images/single-overview-energy-laptop.jpg');
      text-align: right;
 
@@ -400,8 +401,7 @@
    .hydration_overview {
      background-image: url('../images/single-overview-hydration-laptop.jpg');
      text-align: left;
-
-   }
+   } */
 
    .overview_responsive_background_opacity {
      display: none;
@@ -415,12 +415,14 @@
    }
 
    .facts {
+     height: calc(var(--vh, 1vh) * 85);
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
    }
 
    .facts_table_section {
+     height: calc(var(--vh, 1vh) * 85);
      width: 45%;
      padding: 0 0 0 5%;
    }
@@ -449,7 +451,7 @@
      height: calc(var(--vh, 1vh) * 85);
    }
 
-   .energy_product_gallery_1 {
+   /* .energy_product_gallery_1 {
      background-image: url('../images/energy-table-2.jpg');
    }
 
@@ -471,9 +473,13 @@
 
    .hydration_product_gallery_3 {
      background-image: url('../images/hydration-table-3.jpg');
-   }
+   } */
 
    /* CONTACT PAGE */
+
+   .textwidget {
+     width: 55%;
+   }
 
    .contact_main {
      padding: 35vh 8vw 5vh 8vw;
@@ -487,7 +493,7 @@
    }
 
    .contact_form {
-     width: 55%;
+     width: 100%;
      padding-left: 15%;
    }
 
