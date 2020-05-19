@@ -171,13 +171,13 @@ video {
   background-position: center center;
 }
 
-/* .energy_section {
+.energy_section {
   background-image: url('../images/energy_bkg.jpg');
 }
 
 .hydration_section {
   background-image: url('../images/hydration_bkg.jpg');
-} */
+}
 
 .product_title {
   position: absolute;
@@ -392,7 +392,7 @@ video {
    width: 100%;
  }
 
- /* .story_1 {
+ .story_1 {
    background-image: url('../images/storyline1.jpg');
  }
 
@@ -406,7 +406,7 @@ video {
 
  .story_4 {
    background-image: url('../images/storyline4.jpg');
- } */
+ }
 
  #stage .stage_div:nth-of-type(1) {
    animation-name: fader;
@@ -502,7 +502,7 @@ video {
   }
 
 
-  /* .share_1 {
+  .share_1 {
     background-image: url('../images/share-bkg.jpg');
   }
 
@@ -512,7 +512,7 @@ video {
 
   .share_3 {
     background-image: url('../images/share-bkg-3.jpg');
-  } */
+  }
 
  .sharing_text {
    color: #fff;
@@ -658,13 +658,13 @@ video {
   -webkit-text-fill-color: transparent;
  } */
 
- /* .energy_overview {
+ .energy_overview {
    background-image: url('../images/single-overview-energy.jpg');
  }
 
  .hydration_overview {
    background-image: url('../images/single-overview-hydration.jpg');
- } */
+ }
 
  .facts {
    /* height: calc(var(--vh, 1vh) * 85); */
@@ -816,13 +816,13 @@ video {
 
 @media screen and (min-width: 520px) {
 
-  /* .energy_section {
+  .energy_section {
     background-image: url('../images/energy_bkg-tablet.jpg');
   }
 
   .hydration_section {
     background-image: url('../images/hydration_bkg-tablet.jpg');
-  } */
+  }
 
   .res {
     display: none;
