@@ -16,8 +16,75 @@ window.addEventListener('resize', () => {
 
 setTimeout(function(){
     $('#loadScreen').fadeOut();
-    $('#loadScreen').delay(150).fadeOut('slow');
+    $('#loadScreen').delay(1000).fadeOut('slow');
 }, 1500);
+
+
+
+// VIDEOS
+
+
+
+// VIDEOS HOME (lo de antes, carga asynchronous)
+
+// var videoEnergy = document.getElementById("energyVideo");
+// var videoHydration = document.getElementById("hydrationVideo");
+//
+// $(window).on('load', function(){
+//    videoHydration.autoplay = true;
+//    videoHydration.load();
+// });
+//
+// $(window).on('load', function(){
+//    videoEnergy.autoplay = true;
+//    videoEnergy.load();
+// });
+
+//VIDEOS HOME QUE NO FUNCIONA
+
+// Get all videos.
+var videos = document.querySelectorAll('video');
+videos.length=2;
+
+// Create a promise to wait all videos to be loaded at the same time.
+// When all of the videos are ready, call resolve().
+var promise = new Promise(function(resolve) {
+  var loaded = 0;
+
+  videos.forEach(function(v) {
+    v.addEventListener('loadedmetadata', function() {
+      loaded++;
+
+      if (loaded === videos.length) {
+        resolve();
+      }
+    });
+  });
+});
+console.log(videos);
+// Play all videos one by one only when all videos are ready to be played.
+promise.then(function() {
+  videos.forEach(function(v) {
+    v.autoplay = true;
+  });
+});
+
+
+
+// VIDEO TABLET BUBBLES
+$(window).scroll(function() {
+    $('#bubbles').each(function() {
+        if ($(this).visible(true)) {
+            $(this)[0].play();
+        } else {
+            $(this)[0].pause();
+        }
+    })
+});
+
+
+
+
 
 
 
@@ -188,31 +255,7 @@ navButton.onclick = displayNav;
 
 
 
-// VIDEO PRODUCT
 
-var video = document.getElementById("energyVideo");
-video.autoplay = true;
-video.load();
-
-var video = document.getElementById("hydrationVideo");
-video.autoplay = true;
-video.load();
-
-
-
-
-// VIDEO
-
-
-$(window).scroll(function() {
-    $('#bubbles').each(function() {
-        if ($(this).visible(true)) {
-            $(this)[0].play();
-        } else {
-            $(this)[0].pause();
-        }
-    })
-});
 
 
 // LOOP TEXT
